@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.1.1 commit date:2024-04-15, commit time:15:11, hash:e1743a0317bc</authoring_tool>
+    </contributor>
+    <created>2024-05-30T17:39:12</created>
+    <modified>2024-05-30T17:39:12</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ID18-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.913725 0.913725 0.913725 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ID10-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.976471 0.709804 0.00392157 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="ID18-material" name="ID18">
+      <instance_effect url="#ID18-effect"/>
+    </material>
+    <material id="ID10-material" name="ID10">
+      <instance_effect url="#ID10-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ID12-mesh" name="ID12">
+      <mesh>
+        <source id="ID12-mesh-positions">
+          <float_array id="ID12-mesh-positions-array" count="144">0.004381537 0.002671122 -0.00182408 0.004381537 -0.002671122 -0.00182408 -0.004381537 -0.002671122 -0.00182408 -0.004381537 0.002671122 -0.00182408 0.004381537 0.002671122 -0.00182408 0.004381537 0.002671122 0.02524912 0.004381537 -0.002671122 0.02524912 0.004381537 -0.002671122 -0.00182408 0.004381537 0.002671122 0.02524912 -0.004381537 0.002671122 0.02524912 -0.004381537 -0.002671122 0.02524912 0.004381537 -0.002671122 0.02524912 -0.004381537 0.002671122 -0.00182408 -0.004381537 -0.002671122 -0.00182408 -0.004381537 -0.002671122 0.02524912 -0.004381537 0.002671122 0.02524912 -0.004381537 -0.002671122 0.02524912 0.004381537 -0.002671122 -0.00182408 0.004381537 -0.002671122 0.02524912 -0.004381537 -0.002671122 -0.00182408 0.004381537 0.002671122 -0.00182408 -0.004381537 0.002671122 0.02524912 0.004381537 0.002671122 0.02524912 -0.004381537 0.002671122 -0.00182408 0.01335561 0.006677806 -0.009303212 0.01335561 -0.006677806 -0.009303212 -0.01335561 -0.006677806 -0.009303212 -0.01335561 0.006677806 -0.009303212 0.01335561 0.006677806 -0.009303212 0.01335561 0.006677806 -0.00182408 0.01335561 -0.006677806 -0.00182408 0.01335561 -0.006677806 -0.009303212 0.01335561 0.006677806 -0.00182408 -0.01335561 0.006677806 -0.00182408 -0.01335561 -0.006677806 -0.00182408 0.01335561 -0.006677806 -0.00182408 -0.01335561 0.006677806 -0.009303212 -0.01335561 -0.006677806 -0.009303212 -0.01335561 -0.006677806 -0.00182408 -0.01335561 0.006677806 -0.00182408 -0.01335561 -0.006677806 -0.00182408 0.01335561 -0.006677806 -0.009303212 0.01335561 -0.006677806 -0.00182408 -0.01335561 -0.006677806 -0.009303212 0.01335561 0.006677806 -0.009303212 -0.01335561 0.006677806 -0.00182408 0.01335561 0.006677806 -0.00182408 -0.01335561 0.006677806 -0.009303212</float_array>
+          <technique_common>
+            <accessor source="#ID12-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ID12-mesh-normals">
+          <float_array id="ID12-mesh-normals-array" count="18">0 0 -1 1 0 0 0 0 1 -1 0 0 0 -1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#ID12-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ID12-mesh-vertices">
+          <input semantic="POSITION" source="#ID12-mesh-positions"/>
+        </vertices>
+        <triangles material="ID18-material" count="12">
+          <input semantic="VERTEX" source="#ID12-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ID12-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 0 0 2 0 3 0 4 1 5 1 6 1 6 1 7 1 4 1 8 2 9 2 10 2 10 2 11 2 8 2 12 3 13 3 14 3 12 3 14 3 15 3 16 4 17 4 18 4 17 4 16 4 19 4 20 5 21 5 22 5 20 5 23 5 21 5</p>
+        </triangles>
+        <triangles material="ID10-material" count="12">
+          <input semantic="VERTEX" source="#ID12-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ID12-mesh-normals" offset="1"/>
+          <p>24 0 25 0 26 0 24 0 26 0 27 0 28 1 29 1 30 1 30 1 31 1 28 1 32 2 33 2 34 2 34 2 35 2 32 2 36 3 37 3 38 3 36 3 38 3 39 3 40 4 41 4 42 4 41 4 40 4 43 4 44 5 45 5 46 5 44 5 47 5 45 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Weight" name="Weight" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#ID12-mesh" name="Weight">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ID18-material" target="#ID18-material"/>
+              <instance_material symbol="ID10-material" target="#ID10-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
